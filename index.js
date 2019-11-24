@@ -6,14 +6,8 @@ server = "localhost:9000";
 // create a normal client
 const client = new MemcacheClient({ server });
  
-// Create a client that ignores NOT_STORED response (for McRouter AllAsync mode)
-const mrClient = new MemcacheClient({ server, ignoreNotStored: true });
- 
-// You can specify maxConnections by using an object for server
-// Default maxConnections is 1
- 
-const mClient = new MemcacheClient({ server: { server, maxConnections: 5 } });
- 
+// Find info here: https://www.npmjs.com/package/memcache-client
+
 client.set("key", "akka tcp data test", (err, r) => { 
     console.log(err);
     console.log(r);
