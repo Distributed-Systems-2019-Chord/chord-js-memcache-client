@@ -18,7 +18,7 @@ client.set("key", "akka tcp data test", (err, r) => {
     console.log(err);
     console.log(r);
 });
-client.get("key", (err, data) => { 
+client.get("key", (err, r) => { 
     console.log(err);
     console.log(r);
  });
