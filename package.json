@@ -1,0 +1,14 @@
+{
+  "name": "chord-js-memcache-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Leonard Herold",
+  "license": "MIT",
+  "dependencies": {
+    "memcache-client": "^0.10.1"
+  }
+}
