@@ -16,4 +16,15 @@ client.get("key", (err, r) => {
     console.log(err);
     console.log(r);
  });
+
+ client.set("key2", "akka tcp second data test", (err, r) => { 
+    console.log(err);
+    console.log(r);
+});
+
+client.get("key2", (err, r) => { 
+    console.log(err);
+    console.log(r);
+ });
+
  
