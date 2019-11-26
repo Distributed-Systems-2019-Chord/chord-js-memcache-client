@@ -1,7 +1,6 @@
 const MemcacheClient = require("memcache-client");
 let server;
-server = "10.0.75.1:25520";
-server = "localhost:9000";
+server = "localhost:11211";
 
 // create a normal client
 const client = new MemcacheClient({ server });
